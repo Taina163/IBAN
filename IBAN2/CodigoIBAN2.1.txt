@@ -1,0 +1,29 @@
+Utilizando a base de dados da atividade 7, criar 5 inserções em cada tabela
+
+describe livros
+insert into livros values(435345, "intruções para dançar", "2023-08-04", "lalala");
+insert into livros values(587694, "por luagres incriveis", "2018-05-05", "lelele");
+insert into livros values(23456, "todas as suas imperfeições", "2014-03-04", "lololo");
+insert into livros values(789054, "cartas para martin", "2013-12-23", "lilili");
+insert into livros values(384761, "é assim que acaba", "2015-07-21", "hahaha");
+
+SELECT * livros;
+
+
+describe autores
+insert into autores values(345734, "alexandre", "brasileiro");
+insert into autores values(123456, "taina", "italiana");
+insert into autores values(987654, "camilla", "estadunidense");
+insert into autores values(345676, "maria", "inglesa");
+insert into autores values(465739, "gabriela", "brasileira");
+
+SELECT * autores
+
+describe categoria
+insert into categoria values(1, "romance", "muito amor");
+insert into categoria values(2, "ação", "muito carro");
+insert into categoria values(3, "aventura", "muitas viagens");
+insert into categoria values(4, "terror", "muito susto");
+insert into categoria values(5, "comédia", "muitas risadas");
+
+SELECT * categoria

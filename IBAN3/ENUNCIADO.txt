@@ -1,0 +1,21 @@
+Faça o mapeamento das perguntas abaixo e monte a base de dados para um Petshop. Após, resolva cada um dos exercícios apresentando o código e um print do resultado.
+
+1- Insira 10 registros para cada tabela
+
+2- Altere o nome da tabela cão para cachorro
+
+3- Adicione o atributo sexo na tabela "cachorro". Sexo deve ser varchar(1)
+
+4- Altere o nome do campo "fone" para "telefone" na tabela proprietario
+
+5- Altere o tipo do atributo sexo para char(1) na tabela 'cachorro'
+
+6 - a) Altere o nome do 5º registro da tabela proprietário para Ana.
+     b) Altere o fone do 2º registro da tabela proprietário para (55) 9787-8787.
+     c) Altere o fone do 7º registro da tabela proprietário para (55) 9181-4582.
+     d) Altere o nome da raça do 4º registro da tabela raça para 'Bulldog'
+
+7- a) Liste o nome de todos os cães existentes.
+    b) Liste o nome do proprietário com ID igual 6
+    c) Liste a faixa de peso do cão da raça 'shih tzu'
+    d) Liste todos os cães com peso acima de 12kg

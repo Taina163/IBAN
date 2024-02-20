@@ -1,0 +1,21 @@
+Criar o modelo relacional e a relação de tabelas com dados
+
+Uma pizzaria de tele-entrega apresenta um cardápio
+
+composto por diversos tipos de pizza, cujos dados são:
+número do item, nome da pizza, ingredientes e preços
+das pizzas pequena, média e grande. Na pizzaria
+trabalham funcionários que emitem pedidos de pizzas.
+Cada pedido possui um número e uma data de
+emissão, além do nome, telefone e endereço do cliente
+que solicitou o pedido. Um pedido é emitido por apenas
+um funcionário.  O cliente pode desejar retirar um ou mais ingredientes de
+alguma pizza solicitada. Existem funcionários que são
+entregadores, ou seja, são responsáveis pela entrega
+de um ou mais pedidos. Deve-se saber o número do telefone
+celular destes funcionários para um eventual contato durante uma
+entrega. Um pedido destina-se a um bairro. Para cada bairro existe
+um tempo máximo de espera para a entrega de um pedido.
+Você é livre para definir outros atributos que julgar relevantes.
+
+

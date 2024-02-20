@@ -1,0 +1,74 @@
+ QUESTÃO 1
+Crie um BD chamado Mercado e Crie as seguintes tabelas e insira os
+respectivos dados contidos nelas.
+Produto
+Categoria_Produtos
+Codcat Categoria
+1 Alimenticios
+2 Perfumaria
+3 Higiene
+4 Eletrônico
+5 Vestuário
+Efetue as seguintes consultas
+a) Mostre qual produto possui mais unidade no estoque na categoria 5
+b) Selecione todos os produtos que comecem com a sílaba Ca
+c) Selecionar todos os produtos com exceção do tipo unidade
+d) A quantidade total de produtos cadastrados
+e) Quantidade de produtos agrupados por categoria
+f) Quantidade de produtos por tipo
+g) Os produtos ordenados por nome
+h) A soma de todos os produtos da categoria Alimenticia, sendo do tipo litros.
+i) A soma total de produtos agrupados por categoria e tipo
+j) A média em estoque de produtos de Vestuário
+
+Cod Nom Estoque Tipo codcat
+1 Carne 100 Kg 1
+2 Azeite 30 Litros 1
+3 Biscoito 40 Pacote 1
+4 Sampoo 50 Unidade 3
+5 Televisão 20 Unidade 4
+6 Camiseta 100 Unidade 5
+7 Calça jeans 30 Unidade 5
+8 Farinha 70 Kg 1
+9 Refrigerantes 50 litros 1
+
+
+QUESTÃO 2
+Banco de Dados Agenda
+Construa uma base dados que contenha a agenda de uma turma de funcionários de
+uma pedreira e tenha os seguintes dados:
+
+Cod RG, Nome Cidade Telefone email
+CNH CargaHoraria
+Semanal
+Salário
+1 1234566788 Carlos Tupã 3445533 A 20 1000
+2 1234566789 Santos Júlio de
+Castilhos
+34455789 B 30 1600
+3 1234566784 Delio Ibirubá 3445533 C 20 1000
+4 1234566785 Dilma Cruz
+Alta
+3445733 A 16
+5 1234566783 Francis Boa
+Vista
+3445533 B 16 900
+6 1234566782 Gilson Tupã 3445533 C 20 1000
+7 1234566781 Mairon Júlio de
+Castilhos
+3446533 A 20 1000
+8 1234566712 Diego Ibirubá 3445533 B 20 1000
+
+
+Faça as seguintes Consultas:
+1. Mostrar todos os nomes de funcionários com suas respectivas cidades.
+2. Mostra a Soma total de Carga horária.
+3. Mostrar a Média Salarial
+4. Mostrar a quantidade de funcionários
+5. Mostrar a quantidade de funcionários agrupados por cidade.
+6. Mostrar a quantidade de funcionário agrupados por carga horária
+7. Atualizar os dados do Funcionários Dilma e Francis que aumentaram sua
+carga horária de 16 para 18.
+8. Atualizar o salário do funcionário Francis para R$ 920,00
+9. Selecionar os funcionários com CNH do tipo A
+

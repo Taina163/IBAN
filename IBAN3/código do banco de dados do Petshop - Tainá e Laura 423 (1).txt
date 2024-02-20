@@ -1,0 +1,226 @@
+create database Pets;
+use Pets;
+
+
+create table cao( 
+id int, 
+nome varchar(20),
+peso float, 
+primary key (id));
+
+create  table proprietario( 
+id int, 
+nome varchar(30), 
+fone varchar(30), 
+primary key(cpf));
+
+
+create  table raca( 
+id int, 
+nome varchar(10), 
+faixa_depeso varchar(30), 
+primary key(id));
+
+describe cao
+
+insert into cao  values (1, "Mel", 20);
+insert into cao  values (2, "Bartholomeu", 50);
+insert into cao  values (3, "George", 10);
+insert into cao  values (4, "Caca", 13);
+insert into cao  values (5, "Abelinha", 40);
+insert into cao  values (6, " Einstein", 24);
+insert into cao  values (7, "Sakura", 60);
+insert into cao  values (8, "Ada,", 30);
+insert into cao  values (9, "Amora", 10);
+insert into cao  values (10, "Cacau", 12);
+
+SELECT * from cao
+
+id     nome          peso
+1      Mel           20
+2      Bartholomeu   50
+3      George        10
+4      Caca          13
+5      Abelinha      40
+6      Einstein      24
+7      Sakura        60
+8      Ada           30
+9      Amora         10
+10     Cacau         12
+
+describe proprietario;
+
+insert into proprietario values (1, "Josiane","(55)84474652");
+insert into proprietario values(2, "Marcelo", "(55)84025587");
+insert into proprietario values(3, "Maria Clara", "(55)991190236");
+insert into proprietario values(4, "Sofia", "(55)84474653");
+insert into proprietario values(5, "Jonathan", "(55)84845736");
+insert into proprietario values (6, "Josiane", "(55)84474632");
+insert into proprietario values (7, "Rafael", "(55)84474626");
+insert into proprietario values (8, "Gabriel", "(55)84474625");
+insert into proprietario values (9, "Fabio", "(55)84474624");
+insert into proprietario values (10, "Laura", "(55)84474623");
+
+SELECT * from proprietario
+
+id     nome         telefone
+1      Josiane      (55)84474652
+2      Marcelo      (55)84025587
+3      Maria Clara  (55)991190236
+4      Sofia        (55)84474653
+5      Jonathan     (55)84845736
+6      Josiane      (55)84474632
+7      Rafael       (55)84474626
+8      Gabriel      (55)84474625
+9      Fabio        (55)84474624
+10     Laura        (55)84474633
+
+describe raca;
+
+insert into raca values (1, "Doberman","9kg");
+insert into raca values(2, "Poodle  ", "7kg  ");
+insert into raca values(3, "Labrador", "8kg");
+insert into raca values(4, "Akita", "2kg");
+insert into raca values(5, "Boxer", "10kg");
+insert into raca values (6, "Shiba", "5kg");
+insert into raca values (7, "Pug", "6kg");
+insert into raca values (8, "Pinscher", "9kg");
+insert into raca values (9, "Pitbull", "3kg");
+insert into raca values (10, "Beagle", "4kg");
+
+SELECT * from raca
+
+id     nome         faixa_depeso
+1      Doberman     9kg
+2      Poodle       7kg
+3      Labrador     8kg
+4      Bulldog      2kg
+5      Boxer        10kg
+6      Shiba        5kg
+7      Pug          6kg
+8      Pinscher     9kg
+9      Pitbull      3kg
+10     Beagle       4kg
+
+
+
+RENAME table cao to cachorro
+
+
+ALTER TABLE cachorro add sexo varchar(1)
+
+ALTER TABLE prorpietario CHANGE fone telefone varchar(50)
+
+ALTER TABLE cachorro MODIFY COLUMN sexo char(1);
+
+UPDATE proprietario SET nome = 'ANA' WHERE id = 5;
+SELECT *from proprietario
+
+id     nome         telefone
+1      Josiane      (55)84474652
+2      Marcelo      (55)84025587
+3      Maria Clara  (55)991190236
+4      Sofia        (55)84474653
+5      ANA          (55)84845736
+6      Josiane      (55)84474632
+7      Rafael       (55)84474626
+8      Gabriel      (55)84474625
+9      Fabio        (55)84474624
+10     Laura        (55)84474633
+
+
+UPDATE proprietario SET telefone = '(55)97878787' WHERE id = 2;
+SELECT *from proprietario
+
+id     nome         telefone
+1      Josiane      (55)84474652
+2      Marcelo      (55)97878787
+3      Maria Clara  (55)991190236
+4      Sofia        (55)84474653
+5      ANA          (55)84845736
+6      Josiane      (55)84474632
+7      Rafael       (55)84474626
+8      Gabriel      (55)84474625
+9      Fabio        (55)84474624
+10     Laura        (55)84474633
+
+
+UPDATE proprietario SET telefone = '(55)91814582' WHERE id = 7;
+SELECT *from proprietario
+
+id     nome         telefone
+1      Josiane      (55)84474652
+2      Marcelo      (55)97878787
+3      Maria Clara  (55)991190236
+4      Sofia        (55)84474653
+5      ANA          (55)84845736
+6      Josiane      (55)84474632
+7      Rafael       (55)91814582
+8      Gabriel      (55)84474625
+9      Fabio        (55)84474624
+10     Laura        (55)84474633
+
+
+UPDATE raca SET nome = 'Bulldog' WHERE id = 4;*
+SELECT *FROM raca
+
+id     nome         faixa_depeso
+1      Doberman     9kg
+2      Poodle       7kg
+3      Labrador     8kg
+4      Bulldog      2kg
+5      Boxer        10kg
+6      Shiba        5kg
+7      Pug          6kg
+8      Pinscher     9kg
+9      Pitbull      3kg
+10     Beagle       4kg
+
+
+SELECT *from cachorro;
+select nome from cachorro;
+
+       nome
+       Mel
+       Bartholomeu
+       George
+       Caca
+       Abelinha
+       Einstein
+       Sakura
+       Ada
+       Amora
+       Cacau
+
+
+SELECT nome from proprietario where id = 6
+
+       nome
+       josiane
+
+
+SELECT faixa_depeso from raca where nome = 'shih tzu'	
+
+       faixa_depeso
+       6kg
+
+
+SELECT nome from cachorro where peso > 12
+
+       nome
+       Mel
+       Bartholomeu
+       Caca
+       Abelinha
+       Einstein
+       Sakura
+       Ada
+
+
+
+
+
+
+
+
+

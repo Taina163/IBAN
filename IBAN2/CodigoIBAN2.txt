@@ -1,0 +1,49 @@
+Uma biblioteca deseja manter informações sobre seus livros. Inicialmente, quer armazenar para os livros as seguintes características: ISBN, título, ano, editora e autores deste livro. Para os autores, deseja manter: nome e nacionalidade. Cabe salientar que um autor pode ter vários livros, assim como um livro pode ser escrito por vários autores. Cada livro da biblioteca pertence a uma categoria. A biblioteca deseja manter um cadastro de todas as categorias existentes, com informações como: código da categoria e descrição. Uma categoria pode ter vários livros associados a ela.
+
+Criar o banco de dados, utilizando o SGBD MYSQL, a partir do contexto acima.
+
+Criar a base e as tabelas.
+
+
+create table livros(
+     isbn integer,
+     titulo varchar(100),
+     ano date,
+     editora varchar(50),
+     primary key(isbn));
+     Show tables;
+     describe livros;
+
+create table autores(
+     CPF integer,
+     nome varchar(20),
+     nacionalidade varchar(50),
+     primary key(CPF));
+     Show tables;
+     describe autores;
+
+create table categoria(
+     ID integer,
+     nome varchar(20),
+     descrição text,
+     primary key(ID));
+     Show tables;
+     describe categorias;
+     
+insert into livros values(435345, "intruções para dançar", "2023-08-04", "lalala");
+insert into livros values(587694, "por luagres incriveis", "2018-05-05", "lelele");
+insert into livros values(23456, "todas as suas imperfeições", "2014-03-04", "lololo");
+insert into livros values(789054, "cartas para martin", "2013-12-23", "lilili");
+insert into livros values(384761, "é assim que acaba", "2015-07-21", "hahaha");
+
+insert into autores values(345734, "alexandre", "brasileiro");
+insert into autores values(123456, "taina", "italiana");
+insert into autores values(987654, "camilla", "estadunidense");
+insert into autores values(345676, "maria", "inglesa");
+insert into autores values(465739, "gabriela", "brasileira");
+
+insert into categoria values(1, "romance", "muito amor");
+insert into categoria values(2, "ação", "muito carro");
+insert into categoria values(3, "aventura", "muitas viagens");
+insert into categoria values(4, "terror", "muito susto");
+insert into categoria values(5, "comédia", "muitas risadas");

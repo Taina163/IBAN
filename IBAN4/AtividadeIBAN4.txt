@@ -1,0 +1,19 @@
+Considerando o banco de dados abaixo:
+Empregado (Código, Nome, Cidade, Telefone, Data_Admissão, NumDepto, Salário)
+Projeto (Código, Nome, Descrição, NumDepto)
+Departamento (Código, Nome, Localização)
+Criar a base de dados, as tabelas e popular cada tabela com 5 registros e formule as seguintes
+consultas em SQL:
+a) Informe o nome e a localização de todos os departamentos.
+b) Listar os funcionários que reside em Santa Maria.
+c) Obtenha todos os dados dos empregados com salário superior ou igual a 1000 Reais
+d) Obtenha o Nome e salário do empregado de código 'E323'.
+e) Encontre o nome e a descrição de todos os projetos desenvolvidos pelo departamento de
+Marketing ('D12').
+f) Obtenha o Número do Departamento do projeto 'P07'.
+g) Obtenha os nomes dos empregados que estão participando de projetos em desenvolvimento
+no Departamento de Processamento de Dados ('D03')
+h) Obtenha a data de admissão dos funcionários que ganham mais de R$500,00 e que trabalham
+no Departamento Manutenção ('D05').
+i) Qual a função do Departamento 'D01'
+
